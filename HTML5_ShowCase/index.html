@@ -1,59 +1,72 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>XHTML Tutorial Site</title>
-		<link rel="stylesheet" href="main.css">
-	</head>
-	<body>
-		<div id="big_wrapper">
-			<header id="top_header">
-				<h1>Welcome to XHTML</h1>
-			</header>
-			
-			<nav id="top_menu">
-				<ul>
-					<li>Home</li>
-					<li>Tutorials</li>
-					<li>Podcast</li>
-				</ul>
-			</nav>
-			<div id="new_div">
-				<section id="main_section">
-					<article id="new_article">
-						<header>
-							<hgroup>
-								<h1>Title of Article</h1>
-								<h2>Subtitle for Article!</h2>
-							</hgroup>
-						</header>
-							<p>This is the best article eva!</p>
-						<footer>
-							<p>- written on this date</p>
-						</footer>
-					</article>
-					<article id="new_article">
-						<header>
-							<hgroup>
-								<h1>Title of Article</h1>
-								<h2>Subtitle for Article!</h2>
-							</hgroup>
-						</header>
-							<p>This is the second best article eva!</p>
-						<footer>
-							<p>- written on this date</p>
-						</footer>
-					</article>
-				</section>
-				
-				<aside id="side_news">
-					<h4>News</h4>
-					This is the News!
-				</aside>
-			</div>
-			<footer id="the_footer">
-				Copyright stuff 2014
-			</footer>
-		</div>	
-	</body>
+<head>
+  <meta charset="utf-8">
+  <!-- JQuery UI Tabs sources -->
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+  <!-- My Sources -->
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Flex Box Model</a></li>
+    <li><a href="#tabs-2">Shadow Effects</a></li>
+    <li><a href="#tabs-3">Transforms</a></li>
+	<li><a href="#tabs-4">Video Player</a></li>
+	<li><a href="#tabs-5">Drag And Drop</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>The Flex Box Model shows off the power of the chrome webkit. Below is a sample webpage and the articles are sized dynamically through the web-kit horizontal orientation property.  To see how it works try and resize the window and the acticle boxes will change size with the window size.</p>
+	<p>Please note that web-kit properties only work in the Chrome Browser.</p>
+	<p><iframe src="./flexBox.html" width="100%" height="600px" ></iframe></p>
+  </div>
+  <div id="tabs-2">
+    <p>This example shows the effects of the web-kit shadow property.</p>
+	<p>
+	  <ul>
+	    <li>The first box, a simple text box with a shadow property added to the text.</li>
+	    <li>The second box has the same properties as the first but has an added black-white gradient on the box id.</li>
+	    <li>The third box has the web-kit properties of rounded edges and a center gradient of blue and green.</li>
+	  </ul>
+	</p>
+	<p>Please note that web-kit properties only work in the Chrome Browser.</p>
+	<p><iframe src="./shadows.html" width="100%" height="600px" ></iframe></p>
+  </div>
+  <div id="tabs-3">
+    <p>The web-kit transfroms will allow dynamic changes to items.  These examples will cover hover over functionality.</p>
+	<ul>
+	    <li>Box1 will rotate 45 degrees.</li>
+	    <li>Box2 will increase in size.</li>
+	    <li>Box3 will reverse.</li>
+		<li>Box4 will skew.</li>
+		<li>Box5 will rotate 360 degress and change color.</li>
+	  </ul>
+	<p>Please note that web-kit properties only work in the Chrome Browser.</p>
+	<p><iframe src="./transforms.html" width="100%" height="1000px" ></iframe></p>
+  </div>
+  <div id="tabs-4">
+    <p>This is a custom videoplayer which includes the functionality of play and stop, as well as a click event on the progress bar</p>
+    <p id="note">Please note that I didn't have much in the way of screen recording, sorry for the poor quality video editing :)</p>
+    <p><iframe src="./videoPlayer.html" width="100%" height="450px" ></iframe></p>
+  </div>
+  <div id="tabs-5">
+    <p>This application will demonstrate the drag and drop functionality of the JS datatransfer event.  In this case we will be transfering the data of an image from one section to another.</p>
+    <p><iframe src="./DragAndDrop.html" width="100%" height="450px" ></iframe></p>
+  </div>
+</div>
+ 
+ 
+</body>
 </html>
+

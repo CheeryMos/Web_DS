@@ -1,0 +1,42 @@
+body{
+	text-align: center;
+}
+#box1{
+	display:block;
+	width:500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid blue;
+}
+#box2{
+	display:block;
+	width:500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid Red;
+	/*background:-webkit-linear-gradient(top,black,white);*/  /*Top to bottom gradient*/
+	background:-webkit-linear-gradient(45deg,black,white);*/  /*45 degrees gradient*/
+	-webkit-box-shadow: rgba(110,110,110, .7) 11px 11px 11px; /*alpha values add opaqity to shadow effects*/
+}
+#box3{
+	display:block;
+	width:500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid Green;
+	/*background: orange; */ /*Change background to gradient*/
+	/*background:-webkit-linear-gradient(top,black,white);*/  /*Top to bottom gradient*/
+	/*background:-webkit-linear-gradient(45deg,black,white);*/  /*45 degrees gradient*/
+	background:-webkit-radial-gradient(center,circle,blue 0%, green 50%);
+	-webkit-border-radius:25px;  /*use for rounded corners*/
+	/*-webkit-box-shadow: rgb(110,110,110) 11px 11px 11px; */
+	/*-webkit-box-shadow: rgb(110,110,110) 11px 11px 11px inset;*/  /*shadown takes rgb, x-coord, y-coord, blur*/ 
+	-webkit-box-shadow: rgba(110,110,110, .7) 11px 11px 11px; /*alpha values add opaqity to shadow effects*/
+}
+#text{
+	font:bold 30px Century Gothic;
+	text-shadow: rgb(110,110,110) 3px 3px 5px;  /*Non-webkit text shadow*/
+}
