@@ -1,0 +1,8 @@
+/*p.tuna{color: green;}
+#tuna{color: red;}
+.tuna{color: blue;}
+p[name]{color:blue;}
+p[name="Moe"]{color:green;}
+p[name^="Bacon"]{color:green;}
+p[name$="Bacon"]{color:green;}*/
+p[name*="Bacon"]{color:green;}

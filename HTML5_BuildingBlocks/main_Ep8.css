@@ -1,0 +1,17 @@
+/*p.tuna{color: green;}
+#tuna{color: red;}
+.tuna{color: blue;}
+p[name]{color:blue;}
+p[name="Moe"]{color:green;}
+p[name^="Bacon"]{color:green;}
+p[name$="Bacon"]{color:green;}
+p[name*="Bacon"]{color:green;}
+p:nth-child(3){color:green;}
+p:nth-child(odd){color:green;}
+p:nth-child(even){color:red;}
+*{color:blue;}
+
+:not(.Moe){color:red;}
+div > p {color:green;}
+p.Moe + p{color:blue;}*/
+p.Moe ~ p{color:red}

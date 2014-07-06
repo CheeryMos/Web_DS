@@ -1,0 +1,52 @@
+#par{
+	border: 2px solid blue;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	/*-webkit-box-direction: reverse;*/ /* Reverses order of the kids*/
+	width: 700px;
+	/*-webkit-box-pack: end; */ /* pack is the postion of the kids in par*/
+	height: 300px;
+	/*-webkit-box-align: center;*/ /*web kit vertical align property*/
+	-webkit-box-align: stretch; /*stretch will use the total parent height provides kids don't have height*/
+}
+#kid1{
+	border: 2px solid red;
+	background: green;
+	padding: 20px;
+	margin: 10px;
+	/*-webkit-box-ordinal-group: 3;*/ /*place kid1 in third position*/
+	/*width: 60px;*/
+	-webkit-box-flex:1;  /*Flex box model works on spaces, in this case 1 space*/
+	/*height: 100px;*/
+}
+#kid2{
+	border: 2px solid red;
+	background: yellow;
+	padding: 20px;
+	margin: 10px;
+	/*-webkit-box-ordinal-group: 1;*/ /*place kid1 in third position*/
+	/*width: 60px;*/
+	/*-webkit-box-flex:2;*/  /*Flex box model works on spaces, in this case 2 spaces*/
+	-webkit-box-flex:1;
+	/*height: 100px;*/
+}
+#kid3{
+	border: 2px solid red;
+	background: red;
+	padding: 20px;
+	margin: 10px;
+	/*-webkit-box-ordinal-group: 4;*/ /*place kid1 in third position*/
+	/*width: 60px;*/
+	-webkit-box-flex:1;
+	/*height: 100px;*/
+}
+#kid4{
+	border: 2px solid red;
+	background: orange;
+	padding: 20px;
+	margin: 10px;
+	/*-webkit-box-ordinal-group: 2;*/ /*place kid1 in third position*/
+	/*width: 60px;*/
+	-webkit-box-flex:1;
+	/*height: 100px;*/
+}

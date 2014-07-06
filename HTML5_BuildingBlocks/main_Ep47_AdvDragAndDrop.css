@@ -1,0 +1,53 @@
+/* Need Chrome to make this example work */
+/* This example also works if webpage was viewed on a cell phone */
+/**{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	text-align: center;
+}
+header, section,footer,aside,nav,article,hgroup{
+	display:block;
+}*/
+#leftbox{
+	float:left;
+	width:250px;
+	height:250px;
+	margin:5px;
+	border:3px solid blue;
+}
+#rightbox{
+	float:left;
+	width:250px;
+	height:250px;
+	margin:5px;
+	border:3px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+body{
+	text-align: center;
+}
+#box{
+	display:block;
+	width:500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 7px solid blue;
+	background: yellow;  /*Change background to gradient*/
+	outline: 7px solid red;
+	/*-webkit-transform:scale(1.5);*/ /*transform by scale*/
+	/*-webkit-transform:scale(1,3);*/ /*Transfrom by x,y corrds*/
+	/*-webkit-transform:scale(-1,1);*/ /*Transfrom by reverse*/
+	/*-webkit-transform:rotate(45deg);*/ /*Transform to rotate*/
+	/*-webkit-transform:skew(30deg);*/ /*Transform to skew*/
+	/*-webkit-transform:translate(150px, 300px);*/ /*Transform to move*/
+	-webkit-transform:translate(100px, 100px) rotate(30deg) scale(.8); /*mutiple effects*/
+}
+#text{
+	font:bold 30px Century Gothic;
+}
