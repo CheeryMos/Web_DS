@@ -1,0 +1,7 @@
+.table, .table tr, .table td{
+	border: 1px solid black;
+}
+
+.highlight{
+	background-color: #f0f0f0;
+}
