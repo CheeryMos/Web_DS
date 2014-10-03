@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ember.js_TodoMVC</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script type="text/x-handlebars" data-template-name="todos">
+	
+	<section id="todoapp">
+      <header id="header">
+        <h1>todos</h1>
+        <!-- Replacing input with an ember/handlebars controller to add new tasks
+		<input type="text" id="new-todo" value="What needs to be done?" />
+		-->
+		{{input type="text" id="new-todo" placeholder="What needs to be done?" value=newTitle action="createTodo"}}
+	  </header>
+
+      <section id="main">
+        <ul id="todo-list">
+          <!-- Replacing the static todoes with handlebars
+		  <li class="completed">
+            <input type="checkbox" class="toggle">
+            <label>Learn Ember.js</label><button class="destroy"></button>
+          </li>
+          <li>
+            <input type="checkbox" class="toggle">
+            <label>...</label><button class="destroy"></button>
+          </li>
+          <li>
+            <input type="checkbox" class="toggle">
+            <label>Profit!</label><button class="destroy"></button>
+          </li>-->
+		  <!-- Using handlebars to grab each todo in the todo fixtures array -->
+          {{#each}}
+			<!-- If todo isCompleted true, then add the completed class css -->
+			<li {{bind-attr class="isCompleted:completed"}}>
+			  <!-- Updating the checkbox to place the isCompleted class on items when checked
+			  <input type="checkbox" class="toggle">
+			  -->
+			  {{input type="checkbox" checked=isCompleted class="toggle"}}
+			  <label>{{title}}</label><button class="destroy"></button>
+			</li>
+		  {{/each}}
+		</ul>
+
+        <input type="checkbox" id="toggle-all">
+      </section>
+
+      <footer id="footer">
+        <span id="todo-count">
+          <strong>2</strong> todos left
+        </span>
+        <ul id="filters">
+          <li>
+            <a href="all" class="selected">All</a>
+          </li>
+          <li>
+            <a href="active">Active</a>
+          </li>
+          <li>
+            <a href="completed">Completed</a>
+          </li>
+        </ul>
+
+        <button id="clear-completed">
+          Clear completed (1)
+        </button>
+      </footer>
+    </section>
+	
+	
+
+    <footer id="info">
+      <p>Double-click to edit a todo</p>
+    </footer>
+	
+	</script>
+  <!-- Add Dependancies - Note: jquery, handlebars and ember.js came from
+	   ember.js starter kit-->
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-1.1.2.js"></script>
+  <script src="js/libs/ember-1.7.0.js"></script>
+  <!-- Ember data not part of the starting kit -->
+  <script src="http://emberjs.com.s3.amazonaws.com/getting-started/ember-data.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/models/todo.js"></script>
+  <script src="js/controllers/todos_controller.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
